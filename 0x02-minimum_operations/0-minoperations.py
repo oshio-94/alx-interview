@@ -1,14 +1,15 @@
 #!/usr/bin/python3
 """
-This module contains a method that calculates the fewest 
+This module contains a method that calculates the fewest
 number of operations
 needed to result in exactly n H characters in the file.
 """
 
+
 def minOperations(n):
     """
     write a method that calculates
-    the fewest number of operations needed to result 
+    the fewest number of operations needed to result
     in exactly n H characters
     in the file
     """
