@@ -13,7 +13,6 @@ def minOperations(n):
     if n <= 1:
         return 0
     minnum, rem, numOfOperations = n, 2, 0
-
     while minnum > 1:
         if minnum % rem == 0:
             minnum = minnum / rem
