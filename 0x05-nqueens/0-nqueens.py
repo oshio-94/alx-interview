@@ -2,7 +2,7 @@
 """
 N Queens.
 """
-from sys import argv, exit
+import sys
 
 def solveNQueens(n):
     """Program that solves the N queens problem"""
