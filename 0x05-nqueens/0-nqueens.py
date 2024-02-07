@@ -4,6 +4,7 @@ N Queens.
 """
 import sys
 
+
 def solveNQueens(n):
     """Program that solves the N queens problem"""
     new_board = []
@@ -41,6 +42,7 @@ def solveNQueens(n):
 
     solution(0)
     return make_all_boards(new_board)
+
 
 if __name__ == "__main__":
     if len(sys.argv) < 2:
