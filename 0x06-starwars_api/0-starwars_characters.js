@@ -9,11 +9,11 @@ request(url, async (err, response, body) => {
     for (const character of characters) {
       await new Promise((resolve, reject) => {
         request(character, function (err, response, body) {
-	  if (err == null) {
-	    console.log(JSON.parse(body).name);
-	      resolve();
-	  }
-	});
+          if (err == null) {
+            console.log(JSON.parse(body).name);
+            resolve();
+          }
+        });
       });
     }
   }
