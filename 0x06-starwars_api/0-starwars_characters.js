@@ -6,15 +6,15 @@ request(url, async (err, response, body) => {
   if (err == null) {
     const resp = JSON.parse(body);
     const characters = resp.characters;
-    for (let character of characters) {
-	    await new Promise((resolve, reject) => {
-		    request(character, function (err, response, body) {
-			    if (err == null) {
-				    console.log(JSON.parse(body).name);
-				    resolve();
-			    }
-		    });
-	    });
+    for (const character of characters) {
+      await new Promise((resolve, reject) => {
+        request(character, function (err, response, body) {
+	  if (err == null) {
+	    console.log(JSON.parse(body).name);
+	      resolve();
+	  }
+	});
+      });
     }
   }
 });
